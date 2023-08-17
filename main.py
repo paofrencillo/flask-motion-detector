@@ -19,6 +19,9 @@ def frames():
 
     while True:
         # Reading frame(image) from video
+        if cap.isOpened():
+            print("!!!!!!!!!!!!!!!")
+            
         ret, frame = cap.read()
         if frame is None:
             exit()
