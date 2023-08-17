@@ -1,23 +1,10 @@
----
-title: Flask
-description: A popular minimal server framework for Python
-tags:
-  - python
-  - flask
----
+# Motion Detector with Flask and OpenCV
 
-# Python Flask Example
+This is a simple web app that detects motion on camera using OpenCV technology. The beep sound will be heard if motion is detected. The user has the option to turn off or turn on the sound.
+<br>
+<br>
+**Video Demo:**
+<br>
 
-This is a [Flask](https://flask.palletsprojects.com/en/1.1.x/) app that serves a simple JSON response.
+https://github.com/paofrencillo/flask-motion-detector/assets/66950460/eea878bf-0868-4a9d-946b-76dbac8178ec
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/zUcpux)
-
-## ✨ Features
-
-- Python
-- Flask
-
-## 💁‍♀️ How to use
-
-- Install Python requirements `pip install -r requirements.txt`
-- Start the server for development `python3 main.py`
