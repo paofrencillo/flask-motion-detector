@@ -95,4 +95,4 @@ def live():
 
 
 if __name__ == "__main__":
-    socket.run(app, debug=True, port=os.getenv("PORT", default=5000))
+    socket.run(app, debug=False, port=os.getenv("PORT", default=5000))
