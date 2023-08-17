@@ -10,7 +10,7 @@ app = Flask(__name__)
 socket = SocketIO(app, cors_allowed_origins="*")
 
 # Setup Camera
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(-1)
 
 
 def frames():
