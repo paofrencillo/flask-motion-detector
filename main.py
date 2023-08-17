@@ -9,11 +9,9 @@ import requests
 app = Flask(__name__)
 socket = SocketIO(app, cors_allowed_origins="*")
 
-# Setup Camera
-cap = cv2.VideoCapture(2)
-
-
 def frames():
+    # Setup Camera
+    cap = cv2.VideoCapture(0)
     # Assigning our static_back to None
     static_back = None
 
