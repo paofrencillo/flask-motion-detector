@@ -11,7 +11,7 @@ socket = SocketIO(app, cors_allowed_origins="*")
 
 def frames():
     # Setup Camera
-    cap = cv2.VideoCapture(cv2.CAP_V4L2)
+    cap = cv2.VideoCapture(cv2.ANY)
     # Assigning our static_back to None
     static_back = None
 
