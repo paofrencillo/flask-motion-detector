@@ -10,18 +10,15 @@ app = Flask(__name__)
 socket = SocketIO(app, cors_allowed_origins="*")
 
 # Setup Camera
-cap = cv2.VideoCapture(-1)
+cap = cv2.VideoCapture(0)
 
 
 def frames():
     # Assigning our static_back to None
     static_back = None
 
-    while True:
-        # Reading frame(image) from video
-        if cap.isOpened():
-            print("!!!!!!!!!!!!!!!")
-            
+    while (cap.isOpened()):
+        # Reading frame(image) from video     
         ret, frame = cap.read()
         if frame is None:
             exit()
